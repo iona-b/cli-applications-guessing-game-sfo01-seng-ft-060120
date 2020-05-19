@@ -1,6 +1,8 @@
+require 'pry'
+
 def run_guessing_game
-  
-  random_number = rand(1..5)
+binding.pry  
+  random_number = rand(1..6)
   
   puts "Please type in your guess: "
   user_number = gets.chomp
