@@ -1,7 +1,4 @@
-require 'pry'
-
 def run_guessing_game
-binding.pry  
   random_number = rand(1..6)
   
   puts "Please type in your guess: "
