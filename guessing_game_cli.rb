@@ -7,10 +7,22 @@ def run_guessing_game
   
   if user_number == random_number
     puts "You guessed the correct number!"
-  elsif user_number < random_number || user_number > random_number
-    puts "Sorry! The computer guessed #{random_number}."
   elsif user_number == "exit"
     puts "Goodbye!"
+  else
+    puts "Sorry! The computer guessed #{random_number}."
   end
   
+end
+
+ 
+print "Type in your guess: "
+guess = gets.to_i
+ 
+if guess == hidden
+    puts "Hit"
+elsif guess < hidden
+    puts "Your guess is smaller that the hidden number"
+else
+    puts "Your guess is bigger that the hidden number"
 end
