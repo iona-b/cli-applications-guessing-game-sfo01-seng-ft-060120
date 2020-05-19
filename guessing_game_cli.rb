@@ -4,7 +4,7 @@ def run_guessing_game
   random_number = random_number.to_i
   
   user_number = gets.chomp
-  user_number = user_number.to_i
+  #user_number = user_number.to_i
   
   if user_number == random_number
     puts "You guessed the correct number!"
