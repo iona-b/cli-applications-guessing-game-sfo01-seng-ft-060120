@@ -1,6 +1,6 @@
 def run_guessing_game
   
-  random_number = rand(1..6) + 1
+  random_number = rand(6) + 1
   
   puts "Please type in your guess: "
   user_number = gets.chomp
